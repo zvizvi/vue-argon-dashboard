@@ -6,7 +6,13 @@
     expand
   >
     <form
-      class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto"
+      class="
+        navbar-search navbar-search-dark
+        form-inline
+        mr-3
+        d-none d-md-flex
+        ml-lg-auto
+      "
     >
       <div class="form-group mb-0">
         <base-input
@@ -69,7 +75,7 @@ export default {
     return {
       activeNotifications: false,
       showMenu: false,
-      searchQuery: "",
+      searchQuery: ''
     };
   },
   methods: {
@@ -81,7 +87,7 @@ export default {
     },
     toggleMenu() {
       this.showMenu = !this.showMenu;
-    },
-  },
+    }
+  }
 };
 </script>

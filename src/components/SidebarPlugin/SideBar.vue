@@ -1,6 +1,11 @@
 <template>
   <nav
-    class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white"
+    class="
+      navbar navbar-vertical
+      fixed-left
+      navbar-expand-md navbar-light
+      bg-white
+    "
     id="sidenav-main"
   >
     <div class="container-fluid">
@@ -134,29 +139,29 @@
   </nav>
 </template>
 <script>
-import NavbarToggleButton from "@/components/NavbarToggleButton";
+import NavbarToggleButton from '@/components/NavbarToggleButton';
 
 export default {
-  name: "sidebar",
+  name: 'sidebar',
   components: {
-    NavbarToggleButton,
+    NavbarToggleButton
   },
   props: {
     logo: {
       type: String,
-      default: "img/brand/green.png",
-      description: "Sidebar app logo",
+      default: 'img/brand/green.png',
+      description: 'Sidebar app logo'
     },
     autoClose: {
       type: Boolean,
       default: true,
       description:
-        "Whether sidebar should autoclose on mobile when clicking an item",
-    },
+        'Whether sidebar should autoclose on mobile when clicking an item'
+    }
   },
   provide() {
     return {
-      autoClose: this.autoClose,
+      autoClose: this.autoClose
     };
   },
   methods: {
@@ -165,12 +170,12 @@ export default {
     },
     showSidebar() {
       this.$sidebar.displaySidebar(true);
-    },
+    }
   },
   beforeUnmount() {
     if (this.$sidebar.showSidebar) {
       this.$sidebar.showSidebar = false;
     }
-  },
+  }
 };
 </script>

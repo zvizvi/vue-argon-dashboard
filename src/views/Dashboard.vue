@@ -149,62 +149,62 @@
 </template>
 <script>
 // Charts
-import { ordersChart } from "@/components/Charts/Chart";
-import Chart from "chart.js";
+import { ordersChart } from '@/components/Charts/Chart';
+import Chart from 'chart.js';
 
-import PageVisitsTable from "./Dashboard/PageVisitsTable";
-import SocialTrafficTable from "./Dashboard/SocialTrafficTable";
+import PageVisitsTable from './Dashboard/PageVisitsTable';
+import SocialTrafficTable from './Dashboard/SocialTrafficTable';
 let chart;
 
 export default {
   components: {
     PageVisitsTable,
-    SocialTrafficTable,
+    SocialTrafficTable
   },
   data() {
     return {
-      salesChartID: "salesChart",
-      ordersChartID: "ordersChart",
+      salesChartID: 'salesChart',
+      ordersChartID: 'ordersChart',
       bigLineChart: {
         allData: [
           [0, 20, 10, 30, 15, 40, 20, 60, 60],
-          [0, 20, 5, 25, 10, 30, 15, 40, 40],
+          [0, 20, 5, 25, 10, 30, 15, 40, 40]
         ],
-        activeIndex: 0,
-      },
+        activeIndex: 0
+      }
     };
   },
   methods: {
     initBigChart(index) {
       chart.destroy();
       chart = new Chart(
-        document.getElementById(this.salesChartID).getContext("2d"),
+        document.getElementById(this.salesChartID).getContext('2d'),
         {
-          type: "line",
+          type: 'line',
           data: {
-            labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+            labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
             datasets: [
               {
-                label: "Performance",
+                label: 'Performance',
                 tension: 0.4,
                 borderWidth: 4,
-                borderColor: "#5e72e4",
+                borderColor: '#5e72e4',
                 pointRadius: 0,
-                backgroundColor: "transparent",
-                data: this.bigLineChart.allData[index],
-              },
-            ],
+                backgroundColor: 'transparent',
+                data: this.bigLineChart.allData[index]
+              }
+            ]
           },
           options: {
             responsive: true,
             maintainAspectRatio: false,
             legend: {
-              display: false,
+              display: false
             },
             tooltips: {
               enabled: true,
-              mode: "index",
-              intersect: false,
+              mode: 'index',
+              intersect: false
             },
             scales: {
               yAxes: [
@@ -212,72 +212,72 @@ export default {
                   barPercentage: 1.6,
                   gridLines: {
                     drawBorder: false,
-                    color: "rgba(29,140,248,0.0)",
-                    zeroLineColor: "transparent",
+                    color: 'rgba(29,140,248,0.0)',
+                    zeroLineColor: 'transparent'
                   },
                   ticks: {
                     padding: 0,
-                    fontColor: "#8898aa",
+                    fontColor: '#8898aa',
                     fontSize: 13,
-                    fontFamily: "Open Sans",
-                  },
-                },
+                    fontFamily: 'Open Sans'
+                  }
+                }
               ],
               xAxes: [
                 {
                   barPercentage: 1.6,
                   gridLines: {
                     drawBorder: false,
-                    color: "rgba(29,140,248,0.0)",
-                    zeroLineColor: "transparent",
+                    color: 'rgba(29,140,248,0.0)',
+                    zeroLineColor: 'transparent'
                   },
                   ticks: {
                     padding: 10,
-                    fontColor: "#8898aa",
+                    fontColor: '#8898aa',
                     fontSize: 13,
-                    fontFamily: "Open Sans",
-                  },
-                },
-              ],
+                    fontFamily: 'Open Sans'
+                  }
+                }
+              ]
             },
             layout: {
-              padding: 0,
-            },
-          },
+              padding: 0
+            }
+          }
         }
       );
       this.bigLineChart.activeIndex = index;
-    },
+    }
   },
   mounted() {
     chart = new Chart(
-      document.getElementById(this.salesChartID).getContext("2d"),
+      document.getElementById(this.salesChartID).getContext('2d'),
       {
-        type: "line",
+        type: 'line',
         data: {
-          labels: ["May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
           datasets: [
             {
-              label: "Performance",
+              label: 'Performance',
               tension: 0.4,
               borderWidth: 4,
-              borderColor: "#5e72e4",
+              borderColor: '#5e72e4',
               pointRadius: 0,
-              backgroundColor: "transparent",
-              data: this.bigLineChart.allData[1],
-            },
-          ],
+              backgroundColor: 'transparent',
+              data: this.bigLineChart.allData[1]
+            }
+          ]
         },
         options: {
           responsive: true,
           maintainAspectRatio: false,
           legend: {
-            display: false,
+            display: false
           },
           tooltips: {
             enabled: true,
-            mode: "index",
-            intersect: false,
+            mode: 'index',
+            intersect: false
           },
           scales: {
             yAxes: [
@@ -285,42 +285,42 @@ export default {
                 barPercentage: 1.6,
                 gridLines: {
                   drawBorder: false,
-                  color: "rgba(29,140,248,0.0)",
-                  zeroLineColor: "transparent",
+                  color: 'rgba(29,140,248,0.0)',
+                  zeroLineColor: 'transparent'
                 },
                 ticks: {
                   padding: 0,
-                  fontColor: "#8898aa",
+                  fontColor: '#8898aa',
                   fontSize: 13,
-                  fontFamily: "Open Sans",
-                },
-              },
+                  fontFamily: 'Open Sans'
+                }
+              }
             ],
             xAxes: [
               {
                 barPercentage: 1.6,
                 gridLines: {
                   drawBorder: false,
-                  color: "rgba(29,140,248,0.0)",
-                  zeroLineColor: "transparent",
+                  color: 'rgba(29,140,248,0.0)',
+                  zeroLineColor: 'transparent'
                 },
                 ticks: {
                   padding: 10,
-                  fontColor: "#8898aa",
+                  fontColor: '#8898aa',
                   fontSize: 13,
-                  fontFamily: "Open Sans",
-                },
-              },
-            ],
+                  fontFamily: 'Open Sans'
+                }
+              }
+            ]
           },
           layout: {
-            padding: 0,
-          },
-        },
+            padding: 0
+          }
+        }
       }
     );
     ordersChart.createChart(this.ordersChartID);
-  },
+  }
 };
 </script>
 <style></style>

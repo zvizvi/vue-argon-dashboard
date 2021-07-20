@@ -38,33 +38,33 @@
 </template>
 <script>
 export default {
-  name: "base-alert",
+  name: 'base-alert',
   props: {
     type: {
       type: String,
-      default: "default",
-      description: "Alert type",
+      default: 'default',
+      description: 'Alert type'
     },
     icon: {
       type: String,
-      default: "",
-      description: "Alert icon. Will be overwritten by default slot",
+      default: '',
+      description: 'Alert icon. Will be overwritten by default slot'
     },
     dismissible: {
       type: Boolean,
       default: false,
-      description: "Whether alert is closes when clicking",
-    },
+      description: 'Whether alert is closes when clicking'
+    }
   },
   data() {
     return {
-      visible: true,
+      visible: true
     };
   },
   methods: {
     dismissAlert() {
       this.visible = false;
-    },
-  },
+    }
+  }
 };
 </script>

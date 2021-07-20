@@ -67,15 +67,15 @@
 </template>
 <script>
 export default {
-  name: "login",
+  name: 'login',
   data() {
     return {
       model: {
-        email: "",
-        password: "",
-      },
+        email: '',
+        password: ''
+      }
     };
-  },
+  }
 };
 </script>
 <style></style>

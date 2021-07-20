@@ -7,8 +7,8 @@
       expand
     >
       <!-- <router-link slot="brand" class="navbar-brand" to="/">
-                <img src="img/brand/white.png"/>
-            </router-link> -->
+        <img src="img/brand/white.png" />
+      </router-link> -->
 
       <template v-slot="{ closeMenu }">
         <!-- Collapse header -->
@@ -112,7 +112,10 @@
           </div>
           <div class="col-xl-6">
             <ul
-              class="nav nav-footer justify-content-center justify-content-xl-end"
+              class="
+                nav nav-footer
+                justify-content-center justify-content-xl-end
+              "
             >
               <li class="nav-item">
                 <a
@@ -155,13 +158,13 @@
 </template>
 <script>
 export default {
-  name: "auth-layout",
+  name: 'auth-layout',
   data() {
     return {
       year: new Date().getFullYear(),
-      showMenu: false,
+      showMenu: false
     };
-  },
+  }
 };
 </script>
 <style></style>

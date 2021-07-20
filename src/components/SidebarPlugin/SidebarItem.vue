@@ -14,30 +14,30 @@
 </template>
 <script>
 export default {
-  name: "sidebar-item",
+  name: 'sidebar-item',
   props: {
     link: {
       type: Object,
       default: () => {
         return {
-          name: "",
-          path: "",
-          children: [],
+          name: '',
+          path: '',
+          children: []
         };
       },
       description:
-        "Sidebar link. Can contain name, path, icon and other attributes. See examples for more info",
-    },
+        'Sidebar link. Can contain name, path, icon and other attributes. See examples for more info'
+    }
   },
   inject: {
     autoClose: {
-      default: true,
-    },
+      default: true
+    }
   },
   data() {
     return {
       children: [],
-      collapsed: true,
+      collapsed: true
     };
   },
   methods: {
@@ -49,7 +49,7 @@ export default {
       ) {
         this.$sidebar.displaySidebar(false);
       }
-    },
-  },
+    }
+  }
 };
 </script>

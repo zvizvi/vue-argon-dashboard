@@ -93,16 +93,16 @@
 </template>
 <script>
 export default {
-  name: "register",
+  name: 'register',
   data() {
     return {
       model: {
-        name: "",
-        email: "",
-        password: "",
-      },
+        name: '',
+        email: '',
+        password: ''
+      }
     };
-  },
+  }
 };
 </script>
 <style></style>

@@ -13,7 +13,6 @@
   }
 }
 
-
 @mixin form-validation-state($state, $color, $icon) {
   .#{$state}-feedback {
     display: none;
@@ -109,7 +108,9 @@
       ~ .custom-file-label {
         border-color: $color;
 
-        &::before { border-color: inherit; }
+        &::before {
+          border-color: inherit;
+        }
       }
 
       ~ .#{$state}-feedback,

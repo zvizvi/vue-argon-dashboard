@@ -88,12 +88,12 @@
   </div>
 </template>
 <script>
-import { Loader } from "google-maps";
-const loader = new Loader("YOUR_API_KEY");
+import { Loader } from 'google-maps';
+const loader = new Loader('YOUR_API_KEY');
 export default {
   data() {
     return {
-      nav: null,
+      nav: null
     };
   },
   mounted() {
@@ -108,58 +108,58 @@ export default {
         zoomControl: true,
         styles: [
           {
-            featureType: "administrative",
-            elementType: "labels.text.fill",
-            stylers: [{ color: "#444444" }],
+            featureType: 'administrative',
+            elementType: 'labels.text.fill',
+            stylers: [{ color: '#444444' }]
           },
           {
-            featureType: "landscape",
-            elementType: "all",
-            stylers: [{ color: "#f2f2f2" }],
+            featureType: 'landscape',
+            elementType: 'all',
+            stylers: [{ color: '#f2f2f2' }]
           },
           {
-            featureType: "poi",
-            elementType: "all",
-            stylers: [{ visibility: "off" }],
+            featureType: 'poi',
+            elementType: 'all',
+            stylers: [{ visibility: 'off' }]
           },
           {
-            featureType: "road",
-            elementType: "all",
-            stylers: [{ saturation: -100 }, { lightness: 45 }],
+            featureType: 'road',
+            elementType: 'all',
+            stylers: [{ saturation: -100 }, { lightness: 45 }]
           },
           {
-            featureType: "road.highway",
-            elementType: "all",
-            stylers: [{ visibility: "simplified" }],
+            featureType: 'road.highway',
+            elementType: 'all',
+            stylers: [{ visibility: 'simplified' }]
           },
           {
-            featureType: "road.arterial",
-            elementType: "labels.icon",
-            stylers: [{ visibility: "off" }],
+            featureType: 'road.arterial',
+            elementType: 'labels.icon',
+            stylers: [{ visibility: 'off' }]
           },
           {
-            featureType: "transit",
-            elementType: "all",
-            stylers: [{ visibility: "off" }],
+            featureType: 'transit',
+            elementType: 'all',
+            stylers: [{ visibility: 'off' }]
           },
           {
-            featureType: "water",
-            elementType: "all",
-            stylers: [{ color: "#5e72e4" }, { visibility: "on" }],
-          },
-        ],
+            featureType: 'water',
+            elementType: 'all',
+            stylers: [{ color: '#5e72e4' }, { visibility: 'on' }]
+          }
+        ]
       };
       const map = new google.maps.Map(
-        document.getElementById("map"),
+        document.getElementById('map'),
         mapOptions
       );
       const marker = new google.maps.Marker({
         position: myLatlng,
-        title: "Regular Map!",
+        title: 'Regular Map!'
       });
       marker.setMap(map);
     });
-  },
+  }
 };
 </script>
 <style></style>

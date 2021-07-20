@@ -58,7 +58,12 @@
               <div class="row">
                 <div class="col">
                   <div
-                    class="card-profile-stats d-flex justify-content-center mt-md-5"
+                    class="
+                      card-profile-stats
+                      d-flex
+                      justify-content-center
+                      mt-md-5
+                    "
                   >
                     <div>
                       <span class="heading">22</span>
@@ -230,22 +235,22 @@ A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</textarea
 </template>
 <script>
 export default {
-  name: "user-profile",
+  name: 'user-profile',
   data() {
     return {
       model: {
-        username: "",
-        email: "",
-        firstName: "",
-        lastName: "",
-        address: "",
-        city: "",
-        country: "",
-        zipCode: "",
-        about: "",
-      },
+        username: '',
+        email: '',
+        firstName: '',
+        lastName: '',
+        address: '',
+        city: '',
+        country: '',
+        zipCode: '',
+        about: ''
+      }
     };
-  },
+  }
 };
 </script>
 <style></style>
