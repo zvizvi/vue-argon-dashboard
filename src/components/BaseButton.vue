@@ -2,7 +2,6 @@
   <component
     :is="tag"
     :type="tag === 'button' ? nativeType : ''"
-    @click="handleClick"
     class="btn"
     :class="classes"
   >
@@ -103,11 +102,7 @@ export default {
       return btnClasses;
     }
   },
-  methods: {
-    handleClick(evt) {
-      this.$emit('click', evt);
-    }
-  }
+  methods: {}
 };
 </script>
 <style></style>
