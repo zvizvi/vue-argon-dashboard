@@ -81,6 +81,10 @@
 
     .collapse-close {
       text-align: right;
+
+      .rtl & {
+        text-align: left;
+      }
     }
   }
 

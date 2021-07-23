@@ -9,7 +9,7 @@
       class="
         navbar-search navbar-search-dark
         form-inline
-        mr-3
+        pr-3
         d-none d-md-flex
         ml-lg-auto
       "
@@ -24,7 +24,7 @@
         </base-input>
       </div>
     </form>
-    <ul class="navbar-nav align-items-center d-none d-md-flex">
+    <ul class="navbar-nav align-items-center d-none d-md-flex pl-3">
       <li class="nav-item dropdown">
         <base-dropdown class="nav-link pr-0">
           <template v-slot:title>

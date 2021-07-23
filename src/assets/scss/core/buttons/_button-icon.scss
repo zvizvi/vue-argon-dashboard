@@ -11,10 +11,20 @@
 
   .btn-inner--text:not(:first-child) {
     margin-left: 0.75em;
+
+    .rtl & {
+      margin-left: unset;
+      margin-right: 0.75em;
+    }
   }
 
   .btn-inner--text:not(:last-child) {
     margin-right: 0.75em;
+
+    .rtl & {
+      margin-right: unset;
+      margin-left: 0.75em;
+    }
   }
 }
 
@@ -88,5 +98,10 @@ a.btn-icon-only {
     white-space: nowrap;
     text-overflow: ellipsis;
     vertical-align: middle;
+
+    .rtl & {
+      margin-left: 0;
+      margin-right: 16px;
+    }
   }
 }

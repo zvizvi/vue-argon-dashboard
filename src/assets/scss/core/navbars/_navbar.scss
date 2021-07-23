@@ -16,6 +16,11 @@
 
       .nav-link-inner--text {
         margin-left: .25rem;
+
+        .rtl & {
+          margin-left: unset;
+          margin-right: .25rem;
+        }
       }
     }
   }
