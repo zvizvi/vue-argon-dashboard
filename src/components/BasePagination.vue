@@ -27,6 +27,7 @@
     </li>
   </ul>
 </template>
+
 <script>
 export default {
   name: 'base-pagination',

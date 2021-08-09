@@ -4,6 +4,7 @@
     <span class="custom-toggle-slider rounded-circle"></span>
   </label>
 </template>
+
 <script>
 export default {
   name: 'base-switch',
@@ -27,4 +28,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

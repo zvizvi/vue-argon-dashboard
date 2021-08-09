@@ -36,6 +36,7 @@
     </div>
   </nav>
 </template>
+
 <script>
 import NavbarToggleButton from './NavbarToggleButton';
 
@@ -92,4 +93,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

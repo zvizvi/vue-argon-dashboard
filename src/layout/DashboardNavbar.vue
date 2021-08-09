@@ -69,6 +69,7 @@
     </ul>
   </base-nav>
 </template>
+
 <script>
 export default {
   data() {

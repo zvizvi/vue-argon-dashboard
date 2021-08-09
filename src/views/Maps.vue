@@ -87,6 +87,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import { Loader } from 'google-maps';
 const loader = new Loader('YOUR_API_KEY');
@@ -162,4 +163,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

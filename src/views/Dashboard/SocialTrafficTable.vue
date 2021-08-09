@@ -42,6 +42,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'social-traffic-table',
@@ -83,4 +84,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

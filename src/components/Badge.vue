@@ -13,6 +13,7 @@
     </slot>
   </component>
 </template>
+
 <script>
 export default {
   name: 'badge',
@@ -45,4 +46,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

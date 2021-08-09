@@ -20,6 +20,7 @@
     </tbody>
   </table>
 </template>
+
 <script>
 export default {
   name: 'base-table',
@@ -70,4 +71,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

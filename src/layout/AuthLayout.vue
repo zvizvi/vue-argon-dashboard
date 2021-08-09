@@ -156,6 +156,7 @@
     </footer>
   </div>
 </template>
+
 <script>
 export default {
   name: 'auth-layout',
@@ -167,4 +168,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

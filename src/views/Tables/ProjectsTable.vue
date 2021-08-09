@@ -149,6 +149,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'projects-table',
@@ -206,4 +207,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

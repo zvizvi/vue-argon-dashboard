@@ -12,6 +12,7 @@
     </router-link>
   </li>
 </template>
+
 <script>
 export default {
   name: 'sidebar-item',

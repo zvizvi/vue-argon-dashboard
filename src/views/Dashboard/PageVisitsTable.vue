@@ -47,6 +47,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'page-visits-table',
@@ -93,4 +94,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

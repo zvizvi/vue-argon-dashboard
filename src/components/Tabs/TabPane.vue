@@ -9,6 +9,7 @@
     <slot></slot>
   </div>
 </template>
+
 <script>
 export default {
   name: 'tab-pane',
@@ -30,4 +31,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

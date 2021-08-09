@@ -69,6 +69,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import DashboardNavbar from './DashboardNavbar.vue';
 import ContentFooter from './ContentFooter.vue';

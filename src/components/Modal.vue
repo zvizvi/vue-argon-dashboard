@@ -50,6 +50,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'modal',
@@ -116,6 +117,7 @@ export default {
   }
 };
 </script>
+
 <style>
 .modal.show {
   background-color: rgba(0, 0, 0, 0.3);

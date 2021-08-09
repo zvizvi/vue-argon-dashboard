@@ -147,6 +147,7 @@
     </div>
   </div>
 </template>
+
 <script>
 // Charts
 import { ordersChart } from '@/components/Charts/Chart';
@@ -323,4 +324,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

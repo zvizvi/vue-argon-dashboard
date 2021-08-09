@@ -138,6 +138,7 @@
     </div>
   </nav>
 </template>
+
 <script>
 import NavbarToggleButton from '@/components/NavbarToggleButton';
 

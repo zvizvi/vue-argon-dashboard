@@ -56,7 +56,7 @@ export const ordersChart = {
                 fontSize: 13,
                 fontColor: '#8898aa',
                 fontFamily: 'Open Sans',
-                callback: function (value) {
+                callback (value) {
                   if (!(value % 10)) {
                     return value;
                   }

@@ -59,6 +59,7 @@
     </slot>
   </div>
 </template>
+
 <script>
 export default {
   inheritAttrs: false,
@@ -145,4 +146,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

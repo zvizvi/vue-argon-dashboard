@@ -31,6 +31,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'base-progress',
@@ -84,4 +85,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

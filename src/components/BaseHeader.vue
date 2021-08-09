@@ -7,6 +7,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'base-header',
@@ -19,4 +20,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

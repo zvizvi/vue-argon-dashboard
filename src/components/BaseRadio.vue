@@ -16,6 +16,7 @@
     </label>
   </div>
 </template>
+
 <script>
 import { randomString } from './stringUtils';
 export default {

@@ -25,6 +25,7 @@
     <slot v-if="!$slots.icon && !icon"></slot>
   </component>
 </template>
+
 <script>
 export default {
   name: 'base-button',
@@ -105,4 +106,5 @@ export default {
   methods: {}
 };
 </script>
+
 <style></style>

@@ -91,6 +91,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'register',
@@ -105,4 +106,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

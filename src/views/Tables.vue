@@ -84,6 +84,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import ProjectsTable from './Tables/ProjectsTable';
 export default {
@@ -93,4 +94,5 @@ export default {
   }
 };
 </script>
+
 <style></style>

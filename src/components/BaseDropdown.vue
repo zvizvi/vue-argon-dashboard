@@ -35,6 +35,7 @@
     </ul>
   </component>
 </template>
+
 <script>
 export default {
   name: 'base-dropdown',
@@ -91,6 +92,7 @@ export default {
   }
 };
 </script>
+
 <style>
 .dropdown {
   list-style-type: none;

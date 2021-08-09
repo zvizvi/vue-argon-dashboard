@@ -65,6 +65,7 @@
     </div>
   </div>
 </template>
+
 <script>
 export default {
   name: 'login',
@@ -78,4 +79,5 @@ export default {
   }
 };
 </script>
+
 <style></style>
