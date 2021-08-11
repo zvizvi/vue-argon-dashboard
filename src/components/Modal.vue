@@ -24,7 +24,7 @@
         ]"
       >
         <div class="modal-header" :class="[headerClasses]" v-if="$slots.header">
-          <slot name="header"></slot>
+          <slot name="header" />
           <slot name="close-button">
             <button
               type="button"
@@ -40,11 +40,11 @@
         </div>
 
         <div class="modal-body" :class="bodyClasses">
-          <slot></slot>
+          <slot />
         </div>
 
         <div class="modal-footer" :class="footerClasses" v-if="$slots.footer">
-          <slot name="footer"></slot>
+          <slot name="footer" />
         </div>
       </div>
     </div>

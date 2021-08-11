@@ -31,8 +31,7 @@
               placeholder="Name"
               addon-left-icon="ni ni-hat-3"
               v-model="model.name"
-            >
-            </base-input>
+            />
 
             <base-input
               formClasses="input-group-alternative"
@@ -40,8 +39,7 @@
               addon-left-icon="ni ni-email-83"
               v-model="model.email"
               focused
-            >
-            </base-input>
+            />
 
             <base-input
               formClasses="input-group-alternative"
@@ -49,8 +47,7 @@
               type="password"
               addon-left-icon="ni ni-lock-circle-open"
               v-model="model.password"
-            >
-            </base-input>
+            />
 
             <div class="text-muted font-italic">
               <small

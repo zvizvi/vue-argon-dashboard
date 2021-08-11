@@ -10,16 +10,16 @@
     ]"
   >
     <div class="card-header" :class="headerClasses" v-if="$slots.header">
-      <slot name="header"> </slot>
+      <slot name="header" />
     </div>
     <div class="card-body" :class="bodyClasses" v-if="!noBody">
-      <slot></slot>
+      <slot />
     </div>
 
-    <slot v-if="noBody"></slot>
+    <slot v-if="noBody" />
 
     <div class="card-footer" :class="footerClasses" v-if="$slots.footer">
-      <slot name="footer"></slot>
+      <slot name="footer" />
     </div>
   </div>
 </template>

@@ -6,7 +6,7 @@
     v-show="active"
     :aria-expanded="active"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

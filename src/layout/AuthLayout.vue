@@ -6,9 +6,11 @@
       containerClasses="px-4 container"
       expand
     >
-      <!-- <router-link slot="brand" class="navbar-brand" to="/">
-        <img src="img/brand/white.png" />
-      </router-link> -->
+      <!-- <template v-slot:brand>
+        <router-link class="navbar-brand" to="/">
+          <img src="img/brand/white.png" />
+        </router-link>
+      </template> -->
 
       <template v-slot="{ closeMenu }">
         <!-- Collapse header -->
@@ -94,7 +96,7 @@
     </div>
     <!-- Page content -->
     <div class="container mt--8 pb-5">
-      <router-view></router-view>
+      <router-view />
     </div>
     <footer class="py-5">
       <div class="container">

@@ -12,7 +12,7 @@
       v-model="model"
     />
     <label :for="cbId" class="custom-control-label">
-      <slot></slot>
+      <slot />
     </label>
   </div>
 </template>

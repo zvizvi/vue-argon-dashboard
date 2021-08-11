@@ -137,10 +137,10 @@
       <!--Tables-->
       <div class="row mt-5">
         <div class="col-xl-8 mb-5 mb-xl-0">
-          <page-visits-table></page-visits-table>
+          <page-visits-table />
         </div>
         <div class="col-xl-4">
-          <social-traffic-table></social-traffic-table>
+          <social-traffic-table />
         </div>
       </div>
       <!--End tables-->

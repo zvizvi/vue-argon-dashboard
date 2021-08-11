@@ -25,7 +25,7 @@
     </div>
 
     <p class="mt-3 mb-0 text-sm">
-      <slot name="footer"> </slot>
+      <slot name="footer" />
     </p>
   </card>
 </template>

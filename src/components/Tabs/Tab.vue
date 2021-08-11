@@ -5,7 +5,7 @@
     :id="id || title"
     :class="{ active: active }"
   >
-    <slot></slot>
+    <slot />
   </div>
 </template>
 

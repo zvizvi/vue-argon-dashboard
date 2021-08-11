@@ -31,7 +31,7 @@
         :id="contentId"
         v-click-outside="closeMenu"
       >
-        <slot :close-menu="closeMenu"></slot>
+        <slot :close-menu="closeMenu" />
       </div>
     </div>
   </nav>

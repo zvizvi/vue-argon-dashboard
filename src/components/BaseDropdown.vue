@@ -31,7 +31,7 @@
         menuClasses
       ]"
     >
-      <slot></slot>
+      <slot />
     </ul>
   </component>
 </template>

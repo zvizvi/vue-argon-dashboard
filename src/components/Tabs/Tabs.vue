@@ -34,7 +34,7 @@
     </template>
     <template v-slot:content>
       <div class="tab-content" :class="[tabContentClasses]">
-        <slot v-bind="slotData"></slot>
+        <slot v-bind="slotData" />
       </div>
     </template>
   </component>

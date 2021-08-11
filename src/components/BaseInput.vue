@@ -46,7 +46,7 @@
         </slot>
       </span>
     </div>
-    <slot name="infoBlock"></slot>
+    <slot name="infoBlock" />
     <slot name="helpBlock">
       <div
         class="text-danger invalid-feedback"

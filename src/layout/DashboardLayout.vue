@@ -59,12 +59,12 @@
       </template>
     </side-bar>
     <div class="main-content" :data="sidebarBackground">
-      <dashboard-navbar></dashboard-navbar>
+      <dashboard-navbar />
 
       <div @click="toggleSidebar">
         <!-- your content here -->
-        <router-view></router-view>
-        <content-footer v-if="!$route.meta.hideFooter"></content-footer>
+        <router-view />
+        <content-footer v-if="!$route.meta.hideFooter" />
       </div>
     </div>
   </div>
@@ -93,4 +93,5 @@ export default {
   }
 };
 </script>
+
 <style lang="scss"></style>

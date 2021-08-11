@@ -22,7 +22,7 @@
         {{ text }}
       </slot>
     </span>
-    <slot v-if="!$slots.icon && !icon"></slot>
+    <slot v-if="!$slots.icon && !icon" />
   </component>
 </template>
 

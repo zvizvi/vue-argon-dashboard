@@ -31,8 +31,7 @@
               placeholder="Email"
               addon-left-icon="ni ni-email-83"
               v-model="model.email"
-            >
-            </base-input>
+            />
 
             <base-input
               formClasses="input-group-alternative mb-3"
@@ -40,8 +39,7 @@
               type="password"
               addon-left-icon="ni ni-lock-circle-open"
               v-model="model.password"
-            >
-            </base-input>
+            />
 
             <base-checkbox class="custom-control-alternative">
               <span class="text-muted">Remember me</span>

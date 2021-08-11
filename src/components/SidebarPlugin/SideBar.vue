@@ -79,7 +79,7 @@
           </base-dropdown>
         </ul>
       </slot>
-      <slot></slot>
+      <slot />
       <div
         v-show="$sidebar.showSidebar"
         class="navbar-collapse collapse show"
@@ -93,15 +93,13 @@
               </router-link>
             </div>
             <div class="col-6 collapse-close">
-              <navbar-toggle-button
-                @click="closeSidebar"
-              ></navbar-toggle-button>
+              <navbar-toggle-button @click="closeSidebar" />
             </div>
           </div>
         </div>
 
         <ul class="navbar-nav">
-          <slot name="links"> </slot>
+          <slot name="links" />
         </ul>
         <!--Divider-->
         <hr class="my-3" />

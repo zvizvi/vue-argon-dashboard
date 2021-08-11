@@ -10,7 +10,7 @@
         <i :class="icon"></i>
       </span>
       <span v-if="$slots.text" class="alert-inner--text">
-        <slot name="text"></slot>
+        <slot name="text" />
       </span>
     </slot>
     <template v-else>
@@ -19,7 +19,7 @@
           <i :class="icon"></i>
         </span>
         <span v-if="$slots.text" class="alert-inner--text">
-          <slot name="text"></slot>
+          <slot name="text" />
         </span>
       </slot>
       <slot name="dismiss-icon">

@@ -20,8 +20,7 @@
           class="input-group-alternative"
           alternative=""
           addon-right-icon="fas fa-search"
-        >
-        </base-input>
+        />
       </div>
     </form>
     <ul class="navbar-nav align-items-center d-none d-md-flex pl-3">

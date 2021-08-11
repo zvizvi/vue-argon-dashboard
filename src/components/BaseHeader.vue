@@ -2,7 +2,7 @@
   <div class="header" :class="{ [`bg-${type}`]: type }">
     <div class="container-fluid">
       <div class="header-body">
-        <slot></slot>
+        <slot />
       </div>
     </div>
   </div>
